@@ -1,0 +1,27 @@
+.bg-vid {
+  /* position: fixed; */
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+}
+.cover {
+  width: 100vw;
+  height: auto;
+}
+.main-container {
+  position: absolute;
+}
+@media only screen and (max-width: 480px) {
+  /* .bg-vid {
+    height: 500px;
+    width: 100vw;
+  } */
+}
+.list {
+  padding-left: 0;
+}
+.li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
