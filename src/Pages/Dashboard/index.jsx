@@ -55,6 +55,7 @@ const features = [
 const Dashboard = () => {
   const [close, setClose] = useState(false);
   const handleClose = () => {
+    console.log("in");
     setClose(!close);
   };
   return (
@@ -65,6 +66,7 @@ const Dashboard = () => {
         icon={nav}
         a={"A"}
         handleClose={handleClose}
+        close={close}
       />
       <video
         className="bg-vid"

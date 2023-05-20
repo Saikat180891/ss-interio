@@ -20,13 +20,6 @@ const SideNav = ({ handleClose }) => {
       <button className="close-desktop" onClick={() => handleClose()}>
         X
       </button>
-      <div className="side-nav">
-        <button className="close" onClick={() => handleClose()}>
-          X
-        </button>
-        <Navbar title={"48 SLOANE SQUARE"} />
-      </div>
-
       <ul className="list">
         {navOptions?.map((item) => {
           return <li className="list-ele">{item}</li>;
