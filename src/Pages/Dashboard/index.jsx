@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Navbar from "../../Components/Navbar";
 import video from "../../Assests/48sloanesquare.mp4";
 import Section from "../../Components/Section";
@@ -9,6 +9,7 @@ import "./index.css";
 import categories from "../../Assests/Dummy";
 import Footer from "../../Components/Footer";
 import SideNav from "../../Components/SideNav";
+import Contact from "../../Components/Contact";
 const features = [
   {
     id: 1,
@@ -191,6 +192,7 @@ const Dashboard = () => {
         text="black"
         align="right"
       />
+      <Contact />
       <Footer />
     </div>
   );
