@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Navbar from "../../Components/Navbar";
 import video from "../../Assests/48sloanesquare.mp4";
 import Section from "../../Components/Section";
@@ -54,13 +54,17 @@ const features = [
 ];
 const Dashboard = () => {
   const [close, setClose] = useState(false);
+
   const handleClose = () => {
     console.log("in");
     setClose(!close);
   };
+  const handleOpen = () => {
+    setClose(!close);
+  };
   return (
     <div className="main-container">
-      {close === true && <SideNav handleClose={handleClose} />}
+      {close === true && <SideNav handleClose={handleClose} close={close} />}
       <Navbar
         title={"48 SLOANE SQUARE"}
         icon={nav}

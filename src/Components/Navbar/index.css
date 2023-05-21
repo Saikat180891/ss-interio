@@ -18,7 +18,8 @@
   color: #b9874c;
   /* padding-right: 1rem; */
 }
-.A {
+.A,
+.A-desktop {
   font-size: xx-large;
   border: #b9874c 1px solid;
   border-radius: 50%;
@@ -29,7 +30,7 @@
   justify-content: center;
   color: #b9874c;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .navbar-container {
     height: 5rem;
   }
@@ -39,8 +40,14 @@
   .A {
     font-size: small;
   }
+  .A-desktop {
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
+  .A {
+    display: none;
+  }
   .title {
     padding-right: 1rem;
   }

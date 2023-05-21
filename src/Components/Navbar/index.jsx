@@ -15,6 +15,7 @@ const Navbar = ({ title, icon, a, handleClose, close }) => {
       )}
       <div className="title">{title}</div>
       {a && <div className="A">{a}</div>}
+      {a && close === false && <div className="A-desktop">{a}</div>}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import instalogo from "../../Assests/insta-logo.png";
 const Footer = () => {
   return (
     <>
@@ -50,7 +51,13 @@ const Footer = () => {
           <div className="mail">sales@aristolondon</div>
           <div className="insta">
             <div className="insta-logo"></div>
-            <div className="insta-text">INSTAGRAM</div>
+            <div className="insta-text">
+              <img
+                src="https://www.flaticon.com/free-icons/instagram"
+                title="instagram icons"
+              />
+              INSTAGRAM
+            </div>
           </div>
         </div>
         <div className="footer-seg1">
