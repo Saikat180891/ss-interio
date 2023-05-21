@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import Navbar from "../../Components/Navbar";
 import video from "../../Assests/48sloanesquare.mp4";
 import Section from "../../Components/Section";
-import img from "../../Assests/img1.jpg";
+import img16 from "../../Assests/img16.jpg";
+import img15 from "../../Assests/img15.png";
+import img1 from "../../Assests/img1.jpg";
+import goldbg from "../../Assests/gold-bg.jpeg";
 import cover from "../../Assests/cover.jpeg";
 import nav from "../../Assests/nav.png";
 import "./index.css";
@@ -81,7 +84,7 @@ const Dashboard = () => {
       />
       <img className="cover" src={cover} />
       <Section
-        img={img}
+        img={img1}
         h1="AN INTRODUCTION"
         h2="48 SLOANE SQUARE"
         para="This Sloane Square property, built in 1904, boasts one of London’s best addresses. Today home to many of the world’s best fashion houses, this west facing apartment lies at the heart of the unique estate of the Cadogan family and directly overlooks the square bearing the family name of Sir Hans Sloane, notable for bequeathing his collection of natural history and curiosities to the nation paving the way for the foundation of the British Museum"
@@ -116,7 +119,23 @@ const Dashboard = () => {
           />
         );
       })}
-      {categories?.dining_room?.map((item, index) => {
+      {categories?.dining_room?.slice(0, 3)?.map((item, index) => {
+        return (
+          <Section
+            img={item.url}
+            h1={item.id === 1 ? "DINING ROOMS" : ""}
+            h2={item.title}
+            para={item.para}
+            bgColor="white"
+            text="black"
+            align={item.id % 2 === 0 ? "left" : "right"}
+          />
+        );
+      })}
+      {/* <div className="drawer"> */}
+      <img className="drawer" src={goldbg} />
+      {/* </div> */}
+      {categories?.dining_room?.slice(3)?.map((item, index) => {
         return (
           <Section
             img={item.url}
@@ -169,7 +188,7 @@ const Dashboard = () => {
         );
       })}
       <Section
-        img={img}
+        img={img15}
         h1="PROPERTY SUMMARY"
         h2="LATERAL ACOMMODATION"
         para="A three bedroom single level apartment that occupies the second floor of a period building on Sloane Square, with seven windows overlooking the square. The property features a lift, high ceilings, two balconies and boasts exceptional west facing views."
@@ -179,7 +198,7 @@ const Dashboard = () => {
         ps="Download floorplan"
       />
       <Section
-        img={img}
+        img={img16}
         h2="PROPERTY FEATURES"
         para={
           <ul className="list">

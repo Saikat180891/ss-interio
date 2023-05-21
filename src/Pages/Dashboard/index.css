@@ -9,6 +9,10 @@
   width: 100vw;
   height: auto;
 }
+.drawer {
+  height: 12.5rem;
+  width: 100%;
+}
 .main-container {
   position: absolute;
   /* margin-left: 1rem;

@@ -32,8 +32,8 @@ const Contact = () => {
           <div className="facs">Facsimile: +44 (0)20 7935 5006</div>
           <div className="mail">sales@aristolondon</div>
           <div className="insta">
-            <div className="insta-logo"></div>
-            <div className="insta-text">INSTAGRAM</div>
+            <img className="insta-logo" src={instalogo} />
+            <span className="insta-text">INSTAGRAM</span>
           </div>
         </div>
       </div>
@@ -50,10 +50,8 @@ const Contact = () => {
           <div className="facs">Facsimile: +44 (0)20 7935 5006</div>
           <div className="mail">sales@aristolondon</div>
           <div className="insta">
-            <div className="insta-logo">
-              <img src={instalogo} />
-            </div>
-            <div className="insta-text">INSTAGRAM</div>
+            <img className="insta-logo" src={instalogo} />
+            <span className="insta-text">INSTAGRAM</span>
           </div>
         </div>
         <div className="contact-seg1">

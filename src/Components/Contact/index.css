@@ -50,6 +50,7 @@
 .insta-logo {
   width: 0.875rem;
   height: 0.875rem;
+  padding-right: 0.625rem;
 }
 @media only screen and (max-width: 600px) {
   .contact-container {
