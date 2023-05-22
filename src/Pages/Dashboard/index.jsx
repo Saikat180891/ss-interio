@@ -132,9 +132,7 @@ const Dashboard = () => {
           />
         );
       })}
-      {/* <div className="drawer"> */}
-      <img className="drawer" src={goldbg} />
-      {/* </div> */}
+      <div className="drawer"></div>
       {categories?.dining_room?.slice(3)?.map((item, index) => {
         return (
           <Section
